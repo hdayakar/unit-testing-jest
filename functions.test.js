@@ -31,3 +31,14 @@ test('User should be Dayakar object', () => {
         lastName: 'arumbaka'
     });
 });
+
+// Regex
+test('There is no I in team', () => {
+    expect('team').not.toMatch(/I/i);
+});
+
+// Arrays
+test('Admin shoud be in usernames', () => {
+    usernames = ['john', 'karen', 'admin'];
+    expect(usernames).toContain('admin');
+});
