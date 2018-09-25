@@ -21,3 +21,13 @@ test('Should be null', () => {
 test('Should be falsy', () => {
     expect(functions.checkValue(undefined)).toBeFalsy();
 });
+
+// toBe matcher is used to check primitive types like string, numbers, null, undefined and boolean
+// we need to use toEqual to check reference types like object, arrays and function
+
+test('User should be Dayakar object', () => {
+    expect(functions.createUser()).toEqual({
+        firstName: 'Dayakar',
+        lastName: 'arumbaka'
+    });
+});
