@@ -57,3 +57,23 @@ test('User fetched name should be Leanne Graham', async () => {
     const data = await functions.fetchUser();
     expect(data.name).toEqual('Leanne Graham');
 });
+
+// beforeEach(() => initDatabase());
+// afterEach(() => closeDatabase());
+
+// beforeAll(() => initDatabase());
+// afterAll(() => closeDatabase());
+
+// const initDatabase = () => console.log('Database Initialized...');
+// const closeDatabase = () => console.log('Database Closed...');
+
+const nameCheck = () => console.log('Checking Name...');
+
+describe('Checking Names', () => {
+    beforeEach(() => nameCheck());
+    
+    test('User is Jeff', () => {
+        const user = 'Jeff';
+        expect(user).toBe('Jeff');
+    })
+});
