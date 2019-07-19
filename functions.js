@@ -10,5 +10,4 @@ const functions = {
         return user;
     }
 }
-
 module.exports = functions;
